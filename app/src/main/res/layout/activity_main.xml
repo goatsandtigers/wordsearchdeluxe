@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.goatsandtigers.wordsearchdeluxe.WordSearchView
+        android:id="@+id/wordSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.30"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:layout_weight="0.70">
+
+        <com.goatsandtigers.wordsearchdeluxe.WordsToFindView
+            android:id="@+id/wordsToFindView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-7942129400584060/7202660459">
+        <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        <!- - ads:adUnitId="ca-app-pub-7942129400584060/7202660459" -->
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
