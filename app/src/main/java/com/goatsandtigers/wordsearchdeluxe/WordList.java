@@ -14,6 +14,7 @@ public enum WordList {
     DINOSAURS("Dinosaurs"),
     EGYPTIAN_GODS("Egyptian Gods"),
     EUROPEAN_CAPITALS("European Capitals"),
+    PERIODIC_TABLE("Periodic Table"),
     SHEEP_BREEDS("Sheep breeds"),
     US_STATES("U.S. States"),
     WELSH_TOWNS("Welsh Towns");
@@ -92,6 +93,20 @@ public enum WordList {
                     "COPENHAGEN", "DUBLIN", "HELSINKI", "LISBON", "LJUBLJANA", "LONDON", "LUXEMBOURG", "MADRID", "MINSK", "NICOSIA", "OSLO", "PARIS",
                     "PODGORICA", "PRAGUE", "PRISTINA", "REYKJAVIK", "RIGA", "ROME", "SARAJEVO", "SKOPJE", "SOFIA", "STOCKHOLM", "TALLINN", "TBILISI",
                     "TIRANA", "VADUZ", "VALLETTA", "VIENNA", "VILNIUS", "WARSAW", "YEREVAN", "ZAGREB");
+        } else if (category == PERIODIC_TABLE) {
+            return Arrays.asList("ACTINIUM", "ALUMINUM", "AMERICIUM", "ANTIMONY", "ARGON", "ARSENIC", "ASTATINE", "BARIUM", "BERKELIUM", "BERYLLIUM",
+                    "BISMUTH", "BOHRIUM", "BORON", "BROMINE", "CADMIUM", "CALCIUM", "CALIFORNIUM", "CARBON", "CERIUM", "CESIUM",
+                    "CHLORINE", "CHROMIUM", "COBALT", "COPERNICIUM", "COPPER", "CURIUM", "DARMSTADTIUM", "DUBNIUM", "DYSPROSIUM",
+                    "EINSTEINIUM", "ERBIUM", "EUROPIUM", "FERMIUM", "FLEROVIUM", "FLUORINE", "FRANCIUM", "GADOLINIUM", "GALLIUM",
+                    "GERMANIUM", "GOLD", "HAFNIUM", "HASSIUM", "HELIUM", "HOLMIUM", "HYDROGEN", "INDIUM", "IODINE", "IRIDIUM",
+                    "IRON", "KRYPTON", "LANTHANUM", "LAWRENCIUM", "LEAD", "LITHIUM", "LIVERMORIUM", "LUTETIUM", "MAGNESIUM", "MANGANESE",
+                    "MEITNERIUM", "MENDELEVIUM", "MERCURY", "MOLYBDENUM", "MOSCOVIUM", "NEODYMIUM", "NEON", "NEPTUNIUM", "NICKEL",
+                    "NIHONIUM", "NIOBIUM", "NITROGEN", "NOBELIUM", "OGANESSON", "OSMIUM", "OXYGEN", "PALLADIUM", "PHOSPHORUS",
+                    "PLATINUM", "PLUTONIUM", "POLONIUM", "POTASSIUM", "PRASEODYMIUM", "PROMETHIUM", "PROTACTINIUM", "RADIUM",
+                    "RADON", "RHENIUM", "RHODIUM", "ROENTGENIUM", "RUBIDIUM", "RUTHENIUM", "RUTHERFORDIUM", "SAMARIUM", "SCANDIUM",
+                    "SEABORGIUM", "SELENIUM", "SILICON", "SILVER", "SODIUM", "STRONTIUM", "SULFUR", "TANTALUM", "TECHNETIUM",
+                    "TELLURIUM", "TENNESSINE", "TERBIUM", "THALLIUM", "THORIUM", "THULIUM", "TIN", "TITANIUM", "TUNGSTEN", "URANIUM",
+                    "VANADIUM", "XENON", "YTTERBIUM", "YTTRIUM", "ZINC", "ZIRCONIUM");
         } else if (category == SHEEP_BREEDS) {
             return Arrays.asList("ACIPAYAM", "ADAL", "AFRICANA", "AFRIKANER", "AFRINO", "ALAI", "ALTAY", "ANCON", "APPENNINICA",
                     "ARABI", "ARAPAWA", "ASKANIAN", "ASSAF", "AUSSIEDOWN", "AWASSI", "BANNUR", "BALKHI", "BALUCHI", "BARDOKA",
@@ -165,6 +180,8 @@ public enum WordList {
                 return R.drawable.egyptian_gods;
             case EUROPEAN_CAPITALS:
                 return R.drawable.european_capitals;
+            case PERIODIC_TABLE:
+                return R.drawable.periodic_table;
             case SHEEP_BREEDS:
                 return R.drawable.sheep_breeds;
             case US_STATES:
