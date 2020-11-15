@@ -151,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
     private void showVictoryMsg() {
         String title = "Well done!";
         String msg = "All words found.";
+        int iconId = WordList.getCategoryDrawable(WordList.getCategory(this));
         new AlertDialog.Builder(this)
                 .setTitle(title)
                 .setMessage(msg)
@@ -159,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
                         newGame();
                     }
                 })
+                .setIcon(iconId)
                 .show();
     }
 }
