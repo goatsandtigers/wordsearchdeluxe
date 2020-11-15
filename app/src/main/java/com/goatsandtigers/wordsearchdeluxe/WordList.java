@@ -150,10 +150,10 @@ public enum WordList {
     public static WordList getCategory(Context context) {
         try {
             SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-            String category = prefs.getString(CATEGORY_KEY, EUROPEAN_CAPITALS.name());
+            String category = prefs.getString(CATEGORY_KEY, DINOSAURS.name());
             return valueOf(category);
         } catch (Exception e) {
-            return EUROPEAN_CAPITALS;
+            return DINOSAURS;
         }
     }
 
@@ -189,7 +189,7 @@ public enum WordList {
             case WELSH_TOWNS:
                 return R.drawable.welsh_towns;
         }
-        return R.drawable.european_capitals;
+        return R.drawable.dinosaurs;
     }
 
     public String getDisplayText() {
