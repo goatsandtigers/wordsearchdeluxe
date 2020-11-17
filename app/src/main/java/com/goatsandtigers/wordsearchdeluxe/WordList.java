@@ -15,6 +15,7 @@ public enum WordList {
     EGYPTIAN_GODS("Egyptian Gods"),
     EUROPEAN_CAPITALS("European Capitals"),
     PERIODIC_TABLE("Periodic Table"),
+    RENAISSANCE_ARTISTS("Renaissance Artists"),
     SHEEP_BREEDS("Sheep breeds"),
     US_STATES("U.S. States"),
     WELSH_TOWNS("Welsh Towns");
@@ -107,6 +108,10 @@ public enum WordList {
                     "SEABORGIUM", "SELENIUM", "SILICON", "SILVER", "SODIUM", "STRONTIUM", "SULFUR", "TANTALUM", "TECHNETIUM",
                     "TELLURIUM", "TENNESSINE", "TERBIUM", "THALLIUM", "THORIUM", "THULIUM", "TIN", "TITANIUM", "TUNGSTEN", "URANIUM",
                     "VANADIUM", "XENON", "YTTERBIUM", "YTTRIUM", "ZINC", "ZIRCONIUM");
+        } else if (category == RENAISSANCE_ARTISTS) {
+            return Arrays.asList("ALBERTINELLI", "ANGELICO", "BALDOVINETTI", "BASSANO", "BASTIANI", "BELLINI", "BERRUGUETE", "BOTTICELLI",
+                    "CAMPI", "CAMBIASO", "COZZARELLI", "DADDI", "DONATELLO", "DOSSI", "FOUQUET", "FRANCIA", "GOZZOLI", "LIGOZZI", "LORENZETTI",
+                    "MICHELANGELO", "MEMMI", "ORCAGNA", "RAPHAEL", "SASSETTA", "TINTORETTO", "TITIAN", "UCCELLO", "VENEZIANO");
         } else if (category == SHEEP_BREEDS) {
             return Arrays.asList("ACIPAYAM", "ADAL", "AFRICANA", "AFRIKANER", "AFRINO", "ALAI", "ALTAY", "ANCON", "APPENNINICA",
                     "ARABI", "ARAPAWA", "ASKANIAN", "ASSAF", "AUSSIEDOWN", "AWASSI", "BANNUR", "BALKHI", "BALUCHI", "BARDOKA",
@@ -182,6 +187,8 @@ public enum WordList {
                 return R.drawable.european_capitals;
             case PERIODIC_TABLE:
                 return R.drawable.periodic_table;
+            case RENAISSANCE_ARTISTS:
+                return R.drawable.renaissance_artists;
             case SHEEP_BREEDS:
                 return R.drawable.sheep_breeds;
             case US_STATES:
