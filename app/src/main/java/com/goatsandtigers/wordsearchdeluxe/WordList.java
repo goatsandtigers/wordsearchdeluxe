@@ -9,6 +9,7 @@ import java.util.List;
 public enum WordList {
 
     AFRICAN_COUNTRIES("African Countries"),
+    BERRIES("Berries"),
     BRITISH_TREES("British Trees"),
     CONSTELLATIONS("Constellations"),
     DINOSAURS("Dinosaurs"),
@@ -38,6 +39,12 @@ public enum WordList {
                     "LESOTHO", "LIBERIA", "LIBYA", "MADAGASCAR", "MALAWI", "MALI", "MAURITANIA", "MAURITIUS", "MOROCCO",
                     "MOZAMBIQUE", "NAMIBIA", "NIGER", "NIGERIA", "RWANDA", "SENEGAL", "SEYCHELLES", "SOMALIA", "SUDAN",
                     "TANZANIA", "TOGO", "TUNISIA", "UGANDA", "ZAMBIA", "ZIMBABWE");
+        } else if (category == BERRIES) {
+            return Arrays.asList("ACAI", "AGARITA", "AMLA", "ARONIA", "BANEBERRY", "BARBERRY", "BEARBERRY", "BILBERRY", "BITTERSWEET",
+                    "BLACKBERRY", "BLUEBERRY", "BOYSENBERRY", "BUNCHBERRY", "CAPERBERRY", "CLOUDBERRY", "COWBERRY", "CRANBERRY",
+                    "CURRANT", "DEWBERRY", "ELDERBERRY", "FARKLEBERRY", "GOJI", "GOOSEBERRY", "GRAPE", "HACKBERRY", "HUCKLEBERRY",
+                    "JUNEBERRY", "JUNIPER", "LINGONBERRY", "LOGANBERRY", "NANNYBERRY", "PERSIMMON", "POKEBERRY", "RASPBERRY", "SALMONBERRY",
+                    "SEABERRY", "SNOWBERRY", "STRAWBERRY", "SUGARBERRY", "TAYBERRY", "THIMBLEBERRY", "WINTERGREEN", "YOUNGBERRY");
         } else if (category == BRITISH_TREES) {
             return Arrays.asList("ALDER", "APPLE", "ASH", "ASPEN", "BEECH", "BIRCH", "BLACKTHORN", "BOX", "BUCKTHORN", "CEDAR", "CHERRY",
                     "CHESTNUT", "CYPRESS", "DOGWOOD", "ELDER", "ELM", "EUCALYPTUS", "FIR", "HAZEL", "HEMLOCK", "HOLLY", "HORNBEAM", "JUNIPER",
@@ -193,6 +200,8 @@ public enum WordList {
         switch (category) {
             case AFRICAN_COUNTRIES:
                 return R.drawable.africa;
+            case BERRIES:
+                return R.drawable.berries;
             case BRITISH_TREES:
                 return R.drawable.british_trees;
             case CONSTELLATIONS:
