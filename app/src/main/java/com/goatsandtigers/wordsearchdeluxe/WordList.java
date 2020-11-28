@@ -11,6 +11,7 @@ public enum WordList {
     AFRICAN_COUNTRIES("African Countries"),
     BERRIES("Berries"),
     BRITISH_TREES("British Trees"),
+    CAT_BREEDS("Cat Breeds"),
     CHESS_PIECES("Chess Pieces"),
     CONSTELLATIONS("Constellations"),
     DINOSAURS("Dinosaurs"),
@@ -51,6 +52,10 @@ public enum WordList {
                     "CHESTNUT", "CYPRESS", "DOGWOOD", "ELDER", "ELM", "EUCALYPTUS", "FIR", "HAZEL", "HEMLOCK", "HOLLY", "HORNBEAM", "JUNIPER",
                     "LIME", "MAPLE", "OAK", "PEAR", "PINE", "PLANE", "PLUM", "POPLAR", "ROWAN", "SPINDLE", "SPRUCE", "SYCAMORE",
                     "WALNUT", "WHITEBEAM", "WILLOW", "YEW");
+        } else if (category == CAT_BREEDS) {
+            return Arrays.asList("ABYSSINIAN", "AEGEAN", "BALINESE", "BAMBINO", "BENGAL", "BIRMAN", "BURMESE", "BURMILLA", "CHARTREUX", "CHAUSIE",
+                    "CYPRUS", "DONSKOY", "FOLDEX", "HIGHLANDER", "KANAANI", "KINKALOW", "KORAT", "LYKOI", "MANX", "NEBELUNG", "OCICAT",
+                    "PERSIAN", "PETERBALD", "RAGDOLL", "RAAS", "SAVANNAH", "SERENGETI", "SIAMESE", "SINGAPURA", "SOKOKE", "SUPHALAK", "TONKINESE");
         } else if (category == CHESS_PIECES) {
             return Arrays.asList("BISHOP", "KING", "KNIGHT", "PAWN", "QUEEN", "ROOK");
         } else if (category == CONSTELLATIONS) {
@@ -207,6 +212,8 @@ public enum WordList {
                 return R.drawable.berries;
             case BRITISH_TREES:
                 return R.drawable.british_trees;
+            case CAT_BREEDS:
+                return R.drawable.cat_breeds;
             case CHESS_PIECES:
                 return R.drawable.chess_pieces;
             case CONSTELLATIONS:
