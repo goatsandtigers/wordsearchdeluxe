@@ -11,6 +11,7 @@ public enum WordList {
     AFRICAN_COUNTRIES("African Countries"),
     BERRIES("Berries"),
     BRITISH_TREES("British Trees"),
+    CHESS_PIECES("Chess Pieces"),
     CONSTELLATIONS("Constellations"),
     DINOSAURS("Dinosaurs"),
     EGYPTIAN_GODS("Egyptian Gods"),
@@ -50,6 +51,8 @@ public enum WordList {
                     "CHESTNUT", "CYPRESS", "DOGWOOD", "ELDER", "ELM", "EUCALYPTUS", "FIR", "HAZEL", "HEMLOCK", "HOLLY", "HORNBEAM", "JUNIPER",
                     "LIME", "MAPLE", "OAK", "PEAR", "PINE", "PLANE", "PLUM", "POPLAR", "ROWAN", "SPINDLE", "SPRUCE", "SYCAMORE",
                     "WALNUT", "WHITEBEAM", "WILLOW", "YEW");
+        } else if (category == CHESS_PIECES) {
+            return Arrays.asList("BISHOP", "KING", "KNIGHT", "PAWN", "QUEEN", "ROOK");
         } else if (category == CONSTELLATIONS) {
             return Arrays.asList("ANDROMEDA", "ANTLIA", "APUS", "AQUARIUS", "AQUILA", "ARA", "ARIES", "AURIGA", "CAELUM",
                     "CAMELOPARDALIS", "CANCER", "CAPRICORNUS", "CARINA", "CASSIOPEIA", "CENTAURUS", "CEPHEUS", "CETUS",
@@ -204,6 +207,8 @@ public enum WordList {
                 return R.drawable.berries;
             case BRITISH_TREES:
                 return R.drawable.british_trees;
+            case CHESS_PIECES:
+                return R.drawable.chess_pieces;
             case CONSTELLATIONS:
                 return R.drawable.constellations;
             case DINOSAURS:
