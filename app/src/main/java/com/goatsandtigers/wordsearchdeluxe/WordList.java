@@ -22,6 +22,7 @@ public enum WordList {
     PHONETIC_ALPHABET("Phonetic Alphabet"),
     RENAISSANCE_ARTISTS("Renaissance Artists"),
     SHEEP_BREEDS("Sheep breeds"),
+    SOLAR_SYSTEM("Solar System"),
     US_STATES("U.S. States"),
     WELSH_TOWNS("Welsh Towns");
 
@@ -168,6 +169,8 @@ public enum WordList {
                     "SKUDDE", "SOAY", "SOMALI", "SOUTHDOWN", "STEINSCHAF", "SUFFOLK", "SUMAVSKA", "SWALEDALE", "SWIFTER", "TALESHI",
                     "TAN", "TARGHEE", "TAUTRA", "TEESWATER", "TEXEL", "THALLI", "WAZIRI", "WENSLEYDALE", "WILTIPOLL", "XALDA", "YANKASA",
                     "YIECHENG", "YOROO", "ZACKEL", "ZAGHAWA", "ZAIAN", "ZELAZNA", "ZEMMOUR", "ZLATUSHA", "ZOULAY", "ZWARTBLES");
+        } else if (category == SOLAR_SYSTEM) {
+            return Arrays.asList("EARTH", "JUPITER", "MARS", "MERCURY", "NEPTUNE", "PLUTO", "SATURN", "URANUS", "VENUS");
         } else if (category == US_STATES) {
             return Arrays.asList("ALABAMA", "ALASKA", "ARIZONA", "ARKANSAS", "CALIFORNIA", "COLORADO", "CONNECTICUT", "DELAWARE", "FLORIDA", "GEORGIA",
                     "HAWAII", "IDAHO", "ILLINOIS", "INDIANA", "IOWA", "KANSAS", "KENTUCKY", "LOUISIANA", "MAINE", "MARYLAND", "MASSACHUSETTS", "MICHIGAN",
@@ -239,6 +242,8 @@ public enum WordList {
                 return R.drawable.renaissance_artists;
             case SHEEP_BREEDS:
                 return R.drawable.sheep_breeds;
+            case SOLAR_SYSTEM:
+                return R.drawable.solar_system;
             case US_STATES:
                 return R.drawable.us_states;
             case WELSH_TOWNS:

@@ -8,7 +8,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -127,8 +130,14 @@ public class MainActivity extends AppCompatActivity {
                 newGame();
             }
         });
+
+        ScrollView scrollView = new ScrollView(this);
+        scrollView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        scrollView.addView(categorySelectionView);
+
         new AlertDialog.Builder(this)
-                .setView(categorySelectionView)
+                .setView(scrollView)
                 .setNegativeButton("Close", null)
                 .show();
     }
