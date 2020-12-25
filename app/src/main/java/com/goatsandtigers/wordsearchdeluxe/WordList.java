@@ -19,6 +19,7 @@ public enum WordList {
     EUROPEAN_CAPITALS("European Capitals"),
     GREEK_PHILOSOPHERS("Greek Philosophers"),
     PERIODIC_TABLE("Periodic Table"),
+    PHONETIC_ALPHABET("Phonetic Alphabet"),
     RENAISSANCE_ARTISTS("Renaissance Artists"),
     SHEEP_BREEDS("Sheep breeds"),
     US_STATES("U.S. States"),
@@ -141,6 +142,10 @@ public enum WordList {
                     "SEABORGIUM", "SELENIUM", "SILICON", "SILVER", "SODIUM", "STRONTIUM", "TANTALUM", "TECHNETIUM",
                     "TELLURIUM", "TENNESSINE", "TERBIUM", "THALLIUM", "THORIUM", "THULIUM", "TIN", "TITANIUM", "TUNGSTEN", "URANIUM",
                     "VANADIUM", "XENON", "YTTERBIUM", "YTTRIUM", "ZINC", "ZIRCONIUM");
+        } else if (category == PHONETIC_ALPHABET) {
+            return Arrays.asList("ALFA", "BRAVO", "CHARLIE", "DELTA", "ECHO", "FOXTROT", "GOLF", "HOTEL", "INDIGO", "JULIETT", "KILO",
+                    "LIMA", "MIKE", "NOVEMBER", "OSCAR", "PAPA", "QUEBEC", "ROMEO", "SIERRA", "TANGO", "UNIFORM", "VICTOR", "WHISKEY",
+                    "XRAY", "YANKEE", "ZULU");
         } else if (category == RENAISSANCE_ARTISTS) {
             return Arrays.asList("ALBERTINELLI", "ANGELICO", "BALDOVINETTI", "BASSANO", "BASTIANI", "BELLINI", "BERRUGUETE", "BOTTICELLI",
                     "CAMPI", "CAMBIASO", "COZZARELLI", "DADDI", "DONATELLO", "DOSSI", "FOUQUET", "FRANCIA", "GOZZOLI", "LIGOZZI", "LORENZETTI",
@@ -228,6 +233,8 @@ public enum WordList {
                 return R.drawable.greek_philosophers;
             case PERIODIC_TABLE:
                 return R.drawable.periodic_table;
+            case PHONETIC_ALPHABET:
+                return R.drawable.phoneic_alphabet;
             case RENAISSANCE_ARTISTS:
                 return R.drawable.renaissance_artists;
             case SHEEP_BREEDS:
